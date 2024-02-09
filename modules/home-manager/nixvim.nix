@@ -17,17 +17,35 @@
         lualine.enable = true;
         # lightline.enable = true;
         bufferline.enable = true;
+	nvim-tree.enable = true;
+
+	telescope = {
+	  enable = true;
+
+	  keymaps = {
+	    "<C-p>" = {
+	      action = "git_files";
+	      desc = "Telescope Git Files";
+	    };
+	    "<leader>fg" = "live_grep";
+	  };
+	};
+
+        treesitter.enable = true;
+	nvim-autopairs.enable = true;
+	indent-blankline.enable = true;
+	which-key.enable = true;
       };
 
       plugins.nvim-cmp = {
         enable = true;
-  	autoEnableSources = true;
-  	sources = [
-    	  {name = "nvim_lsp";}
-    	  {name = "path";}
-    	  {name = "buffer";}
-    	  {name = "luasnip";}
-  	];
+        autoEnableSources = true;
+        sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+          {name = "buffer";}
+          {name = "luasnip";}
+        ];
 
   	mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
