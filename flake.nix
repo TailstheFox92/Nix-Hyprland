@@ -44,7 +44,7 @@
         cyclone-virt = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/turbine/configuration.nix
+            ./hosts/cyclone-virt/configuration.nix
           ];
         };
       };
