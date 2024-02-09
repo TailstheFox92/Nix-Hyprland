@@ -1,7 +1,6 @@
 { pkgs, config, ... }:
 
 {
-
   services.mako = {
     enable = true;
     backgroundColor = "#${config.colorScheme.palette.base01}";
@@ -11,5 +10,4 @@
     textColor = "#${config.colorScheme.palette.base04}";
     layer = "overlay";
   };
-
 }

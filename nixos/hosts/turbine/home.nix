@@ -20,7 +20,8 @@
     inputs.nixvim.homeManagerModules.nixvim
     ./../../modules/home-manager/mako.nix
     ./../../modules/home-manager/alacritty.nix
-    ./../../modules/home-manager/nixvim.nix
+    ./../../modules/home-manager/nixvim.nix  
+
   ];
 
   # The home.packages option allows you to install Nix packages into your

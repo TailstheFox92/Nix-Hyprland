@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "Anduril"; # Define your hostname.
+  networking.hostName = "Turbine"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable nix-command and flakes
@@ -93,8 +93,6 @@
      pavucontrol
      neofetch
      swappy
-     meslo-lgs-nf
-     rPackages.fontawesome
      font-manager
      ripgrep
      curl
@@ -103,8 +101,7 @@
   fonts.packages = with pkgs; [
     meslo-lgs-nf
     rPackages.fontawesome
-];
-
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -149,9 +146,6 @@
   hardware = {
     # Opengl
     opengl.enable = true;
-
-    # Most wayland compositors need this
-    nvidia.modesetting.enable = true;
   };  
 
   xdg.portal.enable = true;
@@ -167,4 +161,7 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  # Touchpad support on Lenovo Yoga
+  boot.blacklistedKernelModules = ["elan_i2c"];
 }

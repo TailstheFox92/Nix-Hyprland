@@ -17,9 +17,10 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
-  };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+    nixvim.url = "github:nix-community/nixvim";
+  };
+  outputs = { self, nixpkgs, nixvim, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -30,6 +31,13 @@
           specialArgs = {inherit inputs;};
           modules = [ 
             ./hosts/anduril/configuration.nix
+          ];
+        };
+        
+        turbine = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/turbine/configuration.nix
           ];
         };
       };
