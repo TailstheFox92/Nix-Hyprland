@@ -66,6 +66,7 @@
           installCargo = true;
           installRustc = true;
         };
+	rnix-lsp.enable = true;
       };
     };
 
