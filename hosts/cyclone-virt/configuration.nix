@@ -16,7 +16,7 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "Turbine"; # Define your hostname.
+  networking.hostName = "Cyclone"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable nix-command and flakes
