@@ -92,7 +92,17 @@
      wl-clipboard
      pavucontrol
      neofetch
+     swappy
+     meslo-lgs-nf
+     rPackages.fontawesome
+     font-manager
   ];
+
+  fonts.packages = with pkgs; [
+    meslo-lgs-nf
+    rPackages.fontawesome
+];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

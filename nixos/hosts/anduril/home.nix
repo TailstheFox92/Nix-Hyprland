@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -14,6 +14,12 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
+
+  imports= [
+    inputs.nix-colors.homeManagerModules.default
+    ./../../modules/home-manager/mako.nix
+    ./../../modules/home-manager/alacritty.nix
+  ];
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -67,9 +73,19 @@
   #  /etc/profiles/per-user/gfernandez/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
+  colorScheme = inputs.nix-colors.colorschemes.tokyo-night-terminal-dark;
+
+  # Hyprland Configuration
+  # wayland.windowManager.hyprland = {
+  #   enable = true;
+  #   
+  #   settings = {
+  #      
+  #   };
+  # };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
