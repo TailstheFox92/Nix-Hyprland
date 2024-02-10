@@ -25,6 +25,7 @@
     ./../../modules/home-manager/git.nix
     ./../../modules/home-manager/gtk.nix
     ./../../modules/home-manager/default-applications.nix
+    ./../../modules/home-manager/zsh.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -33,6 +34,9 @@
     tokyo-night-gtk
     bibata-cursors
     gtk-engine-murrine
+    zathura
+    imv
+    mpv
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
