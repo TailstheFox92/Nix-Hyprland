@@ -26,6 +26,24 @@
     ./../../modules/home-manager/gtk.nix
     ./../../modules/home-manager/default-applications.nix
     ./../../modules/home-manager/zsh.nix
+    # ./../../modules/home-manager/wallpaper-picker.nix
+    ./../../modules/home-manager/monitors.nix
+  ];
+
+  # wallpaper = /./../../modules/home-manager/wallpapers/CyberpunkRuins.jpg;
+  
+  # Determine Display Settings for Hyprland
+  monitors = [
+    {
+      name = "eDP-1";
+      width = 1920;
+      height = 1080;
+      refreshRate = 60;
+      x = 0;
+      y = 0;
+      scale = 1;
+      enabled = true;
+    } 
   ];
 
   # The home.packages option allows you to install Nix packages into your

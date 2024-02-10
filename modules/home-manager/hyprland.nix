@@ -7,13 +7,25 @@ let
 
     sleep 1
 
-    ${pkgs.swww}/bin/swww img ${./wallpaper.jpg} &
+    ${pkgs.swww}/bin/swww img ${./wallpapers/CyberpunkRuins.jpg} &
   '';
 
 in
 {
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
+    
+    # Setup Monitors as defined in home.nix
+    monitor = map
+      (m:
+        let
+	  resolution = "${toString m.width}x${toString m.height}!${toString m.refreshRate}";
+	  position = "${toString m.x}x${toString m.y}";
+	  scale = "${toString m.scale}";
+	in
+	"${m.name},${if m.enabled then "${resolution},${position},${scale}" else "disable"}"
+      )
+      (config.monitors);
 
     general = with config.colorScheme.palette; {
       gaps_in = 5;
