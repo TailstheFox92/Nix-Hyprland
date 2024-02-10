@@ -24,6 +24,7 @@
     ./../../modules/home-manager/nixvim.nix  
     ./../../modules/home-manager/git.nix
     ./../../modules/home-manager/gtk.nix
+    ./../../modules/home-manager/default-applications.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
