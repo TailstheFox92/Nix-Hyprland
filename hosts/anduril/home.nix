@@ -18,6 +18,7 @@
   imports= [
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
+    ./../../modules/home-manager/hyprland.nix
     ./../../modules/home-manager/mako.nix
     ./../../modules/home-manager/alacritty.nix
     ./../../modules/home-manager/nixvim.nix
@@ -78,16 +79,8 @@
     EDITOR = "nvim";
   };
 
-  colorScheme = inputs.nix-colors.colorschemes.tokyo-night-terminal-dark;
+  colorScheme = inputs.nix-colors.colorschemes.tokyo-night-dark;
 
-  # Hyprland Configuration
-  # wayland.windowManager.hyprland = {
-  #   enable = true;
-  #   
-  #   settings = {
-  #      
-  #   };
-  # };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

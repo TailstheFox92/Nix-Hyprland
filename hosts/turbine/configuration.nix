@@ -96,6 +96,7 @@
      font-manager
      ripgrep
      curl
+     grimblast
   ];
 
   fonts.packages = with pkgs; [
@@ -134,6 +135,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
   environment.sessionVariables = {
