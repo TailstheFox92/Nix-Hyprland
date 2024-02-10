@@ -132,7 +132,7 @@ in
     bindm = [
       # mouse movements
       "$mod, mouse:272, movewindow"
-      "$mod, mouse273, resizewindow"
+      "$mod, mouse:273, resizewindow"
       "$mod ALT, mouse:272, resizewindow"
     ];
 
