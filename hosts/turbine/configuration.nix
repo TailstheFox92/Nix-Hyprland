@@ -115,7 +115,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
@@ -132,11 +132,11 @@
   system.stateVersion = "23.11"; # Did you read the comment?
 
   # Enabling Hyprland on NixOS
-  # programs.hyprland = {
-  #   enable = true;
-  #   xwayland.enable = true;
-  #   package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  # };
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  };
 
   environment.sessionVariables = {
     # If your cursor becomes invisible

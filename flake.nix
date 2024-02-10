@@ -45,7 +45,7 @@
           modules = [ 
             ./hosts/tsunami/configuration.nix
           ];
-        }
+        };
       };
     };
 }
