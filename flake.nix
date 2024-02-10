@@ -40,6 +40,12 @@
             ./hosts/turbine/configuration.nix
           ];
         };
+        tsunami = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/tsunami/configuration.nix
+          ];
+        }
       };
     };
 }
