@@ -122,7 +122,7 @@
   services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 17500 ]; # TODO Configure dropbox on other hosts
+  networking.firewall.allowedTCPPorts = [ 17500 ]; 
   networking.firewall.allowedUDPPorts = [ 17500 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
@@ -144,7 +144,6 @@
       Nice = 10;
     };
   };
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
