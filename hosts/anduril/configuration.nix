@@ -101,7 +101,6 @@
      curl
      grimblast
      dropbox-cli
-     blueman 
   ];
 
   fonts.packages = with pkgs; [
@@ -176,10 +175,13 @@
     opengl.driSupport32Bit = true;
     # Bluetooth
     bluetooth.enable = true;
+    bluetooth.powerOnBoot = true;
 
     # Most wayland compositors need this
     nvidia.modesetting.enable = true;
   };  
+
+  services.blueman.enable = true;
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];

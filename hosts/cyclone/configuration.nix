@@ -99,7 +99,6 @@
      curl
      grimblast
      dropbox-cli
-     blueman 
   ];
 
   # Steam specific config
@@ -180,7 +179,10 @@
     opengl.driSupport32Bit = true;
     # Bluetooth
     bluetooth.enable = true;
+    bluetooth.powerOnBoot = true;
   };  
+
+  services.blueman.enable = true;
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
