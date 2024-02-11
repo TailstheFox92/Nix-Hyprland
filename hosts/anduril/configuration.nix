@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./../../modules/nix/printing.nix
       inputs.home-manager.nixosModules.default
     ];
 
@@ -100,6 +101,7 @@
      curl
      grimblast
      dropbox-cli
+     blueman 
   ];
 
   fonts.packages = with pkgs; [
@@ -171,6 +173,9 @@
   hardware = {
     # Opengl
     opengl.enable = true;
+    opengl.driSupport32Bit = true;
+    # Bluetooth
+    bluetooth.enable = true;
 
     # Most wayland compositors need this
     nvidia.modesetting.enable = true;

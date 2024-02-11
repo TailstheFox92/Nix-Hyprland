@@ -21,7 +21,7 @@
     ./../../modules/home-manager/hyprland.nix
     ./../../modules/home-manager/mako.nix
     ./../../modules/home-manager/alacritty.nix
-    ./../../modules/home-manager/nixvim.nix
+    ./../../modules/home-manager/nixvim.nix  
     ./../../modules/home-manager/git.nix
     ./../../modules/home-manager/gtk.nix
     ./../../modules/home-manager/default-applications.nix
@@ -31,14 +31,14 @@
   ];
 
   # wallpaper = /./../../modules/home-manager/wallpapers/CyberpunkRuins.jpg;
-
+  
   # Determine Display Settings for Hyprland
   monitors = [
     {
-      name = "eDP-1";
+      name = "HDMI-A-2";
       width = 1920;
       height = 1080;
-      refreshRate = 60;
+      refreshRate = 240;
       x = 0;
       y = 0;
       scale = 1;
@@ -52,7 +52,7 @@
     tokyo-night-gtk
     bibata-cursors
     gtk-engine-murrine
-    zathura
+    mate.atril 
     imv
     mpv
     gnome.simple-scan
@@ -66,6 +66,12 @@
     signal-desktop
     thunderbird
     qbittorrent
+
+    # Game Launchers
+    lutris # TODO: Import the following packages except for Game Launchers
+    heroic 
+    cockatrice
+    openmw
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

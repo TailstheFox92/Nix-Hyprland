@@ -55,6 +55,17 @@
     zathura
     imv
     mpv
+    gnome.simple-scan
+    newsflash
+    gimp-with-plugins   
+    krita
+    libreoffice-fresh
+    atril
+    obsidian
+    grapejuice
+    signal-desktop
+    thunderbird
+    qbittorrent
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

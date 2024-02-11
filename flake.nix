@@ -46,6 +46,12 @@
             ./hosts/tsunami/configuration.nix
           ];
         };
+        cyclone = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/cyclone/configuration.nix
+          ];
+        };
       };
     };
 }

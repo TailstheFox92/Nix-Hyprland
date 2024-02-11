@@ -16,7 +16,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "Tsunami"; # Define your hostname.
+  networking.hostName = "Cyclone"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable nix-command and flakes
@@ -94,8 +94,6 @@
      pavucontrol
      neofetch
      swappy
-     meslo-lgs-nf
-     rPackages.fontawesome
      font-manager
      ripgrep
      curl
@@ -107,8 +105,7 @@
   fonts.packages = with pkgs; [
     meslo-lgs-nf
     rPackages.fontawesome
-];
-
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -129,6 +126,7 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
+  # Dropbox Setup
   systemd.user.services.dropbox = {
     description = "Dropbox";
     wantedBy = [ "graphical-session.target" ];
@@ -175,9 +173,6 @@
     opengl.driSupport32Bit = true;
     # Bluetooth
     bluetooth.enable = true;
-
-    # Most wayland compositors need this
-    nvidia.modesetting.enable = true;
   };  
 
   xdg.portal.enable = true;
