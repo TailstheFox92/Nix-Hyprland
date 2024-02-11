@@ -57,7 +57,7 @@
   users.users.gfernandez = {
     isNormalUser = true;
     description = "Gabriel Fernandez";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
     packages = with pkgs; [];
   };
 
