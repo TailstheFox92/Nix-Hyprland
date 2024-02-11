@@ -20,7 +20,7 @@ in
     monitor = map
       (m:
         let
-	  resolution = "${toString m.width}x${toString m.height}!${toString m.refreshRate}";
+	  resolution = "${toString m.width}x${toString m.height}@${toString m.refreshRate}";
 	  position = "${toString m.x}x${toString m.y}";
 	  scale = "${toString m.scale}";
 	in

@@ -46,6 +46,13 @@
     } 
   ];
 
+  nixpkgs.config = {
+    allowUnfree = true; 
+    permittedInsecurePackages = [
+      "electron-25.9.0"
+    ];
+  };
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [

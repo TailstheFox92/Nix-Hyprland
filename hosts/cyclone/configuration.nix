@@ -102,6 +102,13 @@
      blueman 
   ];
 
+  # Steam specific config
+  programs.steam = {
+  enable = true;
+  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+
   fonts.packages = with pkgs; [
     meslo-lgs-nf
     rPackages.fontawesome
@@ -188,4 +195,8 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  # Install necessary virtualisation packages
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }

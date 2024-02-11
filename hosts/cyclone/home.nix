@@ -46,6 +46,13 @@
     } 
   ];
 
+  nixpkgs.config = {
+    allowUnfree = true; 
+    permittedInsecurePackages = [
+      "electron-25.9.0"
+    ];
+  };
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -60,7 +67,7 @@
     gimp-with-plugins   
     krita
     libreoffice-fresh
-    atril
+    mate.atril
     obsidian
     grapejuice
     signal-desktop
@@ -76,8 +83,8 @@
 
   # Virtualization
 
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
+  # virtualisation.libvirtd.enable = true;
+  # programs.virt-manager.enable = true;
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
