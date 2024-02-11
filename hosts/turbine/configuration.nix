@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./../../modules/nixos/sddm.nix
       inputs.home-manager.nixosModules.default
       inputs.sddm-catppuccin.packages.${pkgs.hostPlatform.system}.sddm-catppuccin
     ];
