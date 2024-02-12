@@ -29,6 +29,7 @@
     # ./../../modules/home-manager/wallpaper-picker.nix
     ./../../modules/home-manager/monitors.nix
     ./../../modules/home-manager/waybar.nix
+    ./../../modules/home-manager/rofi.nix
   ];
 
   # wallpaper = /./../../modules/home-manager/wallpapers/CyberpunkRuins.jpg;

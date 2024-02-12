@@ -9,5 +9,6 @@
     borderSize = 2;
     textColor = "#${config.colorScheme.palette.base04}";
     layer = "overlay";
+    extraConfig = "default-timeout=5000";
   };
 }

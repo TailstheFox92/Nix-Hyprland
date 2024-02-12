@@ -9,6 +9,10 @@
       normal.family = "MesloLGS NF";
     };
 
+    window = {
+      opacity = 0.8;
+    };
+
     colors = with config.colorScheme.palette; {
       bright = {
         black = "0x${base00}";
