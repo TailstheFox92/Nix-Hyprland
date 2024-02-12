@@ -112,6 +112,8 @@
      gnome-epub-thumbnailer
      mcomix
      f3d
+     cava
+     pamixer
   ];
 
   # Steam specific config
@@ -124,6 +126,7 @@
   fonts.packages = with pkgs; [
     meslo-lgs-nf
     rPackages.fontawesome
+    nerdfonts
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
