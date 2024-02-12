@@ -19,6 +19,9 @@
     nix-colors.url = "github:misterio77/nix-colors";
 
     nixvim.url = "github:nix-community/nixvim";
+
+    # sddm-catppuccin.url = "github:khaneliman/sddm-catppuccin";
+    # sddm-catppuccin.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = { self, nixpkgs, nixvim, ... }@inputs:
     let

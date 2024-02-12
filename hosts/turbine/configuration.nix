@@ -8,7 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./../../modules/nix/printing.nix
+      ./../../modules/nix/sddm.nix
       inputs.home-manager.nixosModules.default
+      # inputs.sddm-catppuccin.packages."${pkgs.system}".sddm-catppuccin
     ];
 
   # Bootloader.
@@ -98,6 +101,8 @@
      curl
      grimblast
      dropbox-cli
+     catppuccin-sddm-corners
+     libsForQt5.qt5.qtgraphicaleffects
   ];
 
   fonts.packages = with pkgs; [
