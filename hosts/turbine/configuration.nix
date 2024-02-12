@@ -10,8 +10,8 @@
       ./hardware-configuration.nix
       ./../../modules/nix/printing.nix
       ./../../modules/nix/sddm.nix
+      ./../../modules/nix/thunar.nix
       inputs.home-manager.nixosModules.default
-      # inputs.sddm-catppuccin.packages."${pkgs.system}".sddm-catppuccin
     ];
 
   # Bootloader.
@@ -80,7 +80,6 @@
      neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
      git
-     waybar
      mako
      libnotify
      swww
@@ -89,7 +88,6 @@
      brave
      discord
      networkmanagerapplet
-     xfce.thunar
      grim
      slurp
      wl-clipboard
@@ -103,6 +101,17 @@
      dropbox-cli
      catppuccin-sddm-corners
      libsForQt5.qt5.qtgraphicaleffects
+     unzip
+     gnome.file-roller
+     webp-pixbuf-loader
+     poppler
+     ffmpegthumbnailer
+     haskellPackages.freetype2
+     libgsf
+     nufraw-thumbnailer
+     gnome-epub-thumbnailer
+     mcomix
+     f3d
   ];
 
   fonts.packages = with pkgs; [

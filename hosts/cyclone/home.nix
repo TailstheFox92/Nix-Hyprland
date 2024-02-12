@@ -28,6 +28,7 @@
     ./../../modules/home-manager/zsh.nix
     # ./../../modules/home-manager/wallpaper-picker.nix
     ./../../modules/home-manager/monitors.nix
+    ./../../modules/home-manager/waybar.nix
   ];
 
   # wallpaper = /./../../modules/home-manager/wallpapers/CyberpunkRuins.jpg;

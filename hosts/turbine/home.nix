@@ -28,6 +28,7 @@
     ./../../modules/home-manager/zsh.nix
     # ./../../modules/home-manager/wallpaper-picker.nix
     ./../../modules/home-manager/monitors.nix
+    ./../../modules/home-manager/waybar.nix
   ];
 
   # wallpaper = /./../../modules/home-manager/wallpapers/CyberpunkRuins.jpg;
@@ -62,6 +63,17 @@
     zathura
     imv
     mpv
+    gnome.simple-scan
+    newsflash
+    gimp-with-plugins   
+    krita
+    libreoffice-fresh
+    atril
+    obsidian
+    grapejuice
+    signal-desktop
+    thunderbird
+    qbittorrent
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
