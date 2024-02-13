@@ -70,6 +70,7 @@
     thunderbird
     qbittorrent
     vesktop
+    remmina
 
     # Game Launchers
     lutris # TODO: Import the following packages except for Game Launchers

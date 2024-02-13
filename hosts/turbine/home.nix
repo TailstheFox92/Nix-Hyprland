@@ -70,6 +70,7 @@
     qbittorrent
     vesktop
     lutris
+    remmina
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
