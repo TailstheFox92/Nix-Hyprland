@@ -48,12 +48,7 @@
     } 
   ];
   
-  nixpkgs.config = {
-    allowUnfree = true; 
-    permittedInsecurePackages = [
-      "electron-25.9.0"
-    ];
-  };
+  nixpkgs.config.allowUnfree = true;
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -69,7 +64,7 @@
     krita
     libreoffice-fresh
     mate.atril
-    obsidian
+    logseq
     signal-desktop
     thunderbird
     qbittorrent

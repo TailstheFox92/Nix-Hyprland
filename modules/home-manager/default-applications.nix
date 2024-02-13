@@ -3,7 +3,7 @@
 {
   xdg.mimeApps.defaultApplications = {
     "text/plain" = [ "neovim.desktop" ];
-    "application/pdf" = [ "zathura.desktop" ];
+    "application/pdf" = [ "atril.desktop" ];
     "image/*" = [ "imv.desktop" ];
     "video/png" = [ "mpv.desktop" ];
     "video/jpg" = [ "mpv.desktop"];
