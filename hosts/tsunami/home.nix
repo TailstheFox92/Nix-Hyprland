@@ -70,7 +70,6 @@
     libreoffice-fresh
     mate.atril
     obsidian
-    grapejuice
     signal-desktop
     thunderbird
     qbittorrent

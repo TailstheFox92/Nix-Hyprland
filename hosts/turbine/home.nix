@@ -70,11 +70,11 @@
     libreoffice-fresh
     mate.atril
     obsidian
-    grapejuice
     signal-desktop
     thunderbird
     qbittorrent
     vesktop
+    lutris
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
