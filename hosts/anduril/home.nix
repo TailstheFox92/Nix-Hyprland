@@ -61,7 +61,6 @@
     tokyo-night-gtk
     bibata-cursors
     gtk-engine-murrine
-    zathura
     imv
     mpv
     gnome.simple-scan
@@ -69,12 +68,13 @@
     gimp-with-plugins   
     krita
     libreoffice-fresh
-    atril
+    mate.atril
     obsidian
     grapejuice
     signal-desktop
     thunderbird
     qbittorrent
+    vesktop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

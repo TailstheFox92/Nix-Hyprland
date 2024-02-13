@@ -86,7 +86,10 @@
      alacritty
      rofi-wayland
      brave
-     discord
+     (discord.override {
+      withOpenASAR = true;
+      withVencord = true;
+     })
      networkmanagerapplet
      grim
      slurp

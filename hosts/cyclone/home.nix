@@ -61,7 +61,6 @@
     tokyo-night-gtk
     bibata-cursors
     gtk-engine-murrine
-    mate.atril 
     imv
     mpv
     gnome.simple-scan
@@ -75,6 +74,7 @@
     signal-desktop
     thunderbird
     qbittorrent
+    vesktop
 
     # Game Launchers
     lutris # TODO: Import the following packages except for Game Launchers
