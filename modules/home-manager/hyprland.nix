@@ -85,8 +85,27 @@ in
       "$mod, T, exec, thunar" # File Manager
       "$mod SHIFT, F, togglefloating,"
       "$mod, D, exec, rofi -show drun -show-icons" # App Launcher
+      "SUPER, L, exec, swaylock -f -c 000000" # Lock Screen
       #"$mod SHIFT, S, exec, grim -g $(slurp) - | swappy -f -" #screenshot
-      
+
+      # keyboard backlight
+      ", xf86KbdBrightnessUp, exec, brightnessctl -d *::kbd_backlight set +33%"
+      ", xf86KbdBrightnessDown, exec, brightnessctl -d *::kbd_backlight set 33%-"
+
+      # screen brightness
+      ", XF86MonBrightnessUp, exec, brightnessctl s +5% -d intel_backlight"
+      ", XF86MonBrightnessDown, exec, brightnessctl s 5%- -d intel_backlight"
+
+      # keyboard media keys
+      ", XF86AudioRaiseVolume, exec, pamixer -i 5 "
+      ", XF86AudioLowerVolume, exec, pamixer -d 5"
+      ", XF86AudioMicMute, exec, pamixer --default-source -m"
+      ", XF86AudioMute, exec, pamixer -t"
+      ", XF86AudioPlay, exec, playerctl play-pause"
+      ", XF86AudioPause, exec, playerctl play-pause"
+      ", XF86AudioNext, exec, playerctl next"
+      ", XF86AudioPrev, exec, playerctl previous"
+
       # Move focus with Mod + arrow keys
       "$mod, left, movefocus, l"
       "$mod, right, movefocus, r"

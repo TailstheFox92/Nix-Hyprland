@@ -118,6 +118,9 @@
      cava
      pamixer
      btop
+     brightnessctl
+     playerctl
+     swaylock
   ];
 
   fonts.packages = with pkgs; [

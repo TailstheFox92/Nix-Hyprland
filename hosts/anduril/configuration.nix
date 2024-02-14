@@ -119,6 +119,9 @@
      pamixer
      lshw
      btop
+     brightnessctl
+     playerctl
+     swaylock
   ];
 
   fonts.packages = with pkgs; [

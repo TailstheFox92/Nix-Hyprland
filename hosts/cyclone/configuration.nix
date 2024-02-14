@@ -119,6 +119,9 @@
      pamixer
      parted
      btop
+     brightnessctl
+     playerctl
+     swaylock
   ];
 
   # Steam specific config
