@@ -52,15 +52,15 @@
                  padding-right: 6px;
                }
          #workspaces button.active {
-                 background-color: rgb(181, 232, 224);
-                 color: rgb(26, 24, 38);
+                 background-color: rgb(26, 24, 38);
+                 color: rgb(181, 232, 224);
                }
          #workspaces button.urgent {
                  color: rgb(26, 24, 38);
                }
          #workspaces button:hover {
-                 background-color: rgb(248, 189, 150);
-                 color: rgb(26, 24, 38);
+                 background-color: rgb(26, 24, 38);
+                 color: rgb(248, 189, 150);
                }
                tooltip {
                  background: rgb(48, 45, 65);
@@ -141,8 +141,8 @@
         "position" = "top";
         modules-left = [
           "custom/launcher"
-	  "hyprland/workspaces"
-          "temperature"
+	  "hyprland/workspaces" 
+          "tray"
           # "mpd"
           # "custom/cava-internal"
         ];
@@ -150,13 +150,15 @@
           "clock"
         ];
         modules-right = [
-          "pulseaudio"
           "backlight"
+          "pulseaudio"
           "memory"
           "cpu"
           "network"
+          "temperature"
+	  "battery"
+	  "battery#bat2"
           # "custom/powermenu"
-          "tray"
         ];
 	"hyprland/workspaces" = {
 	  format = "{icon}";
@@ -179,6 +181,10 @@
         #   "exec" = "sleep 1s && cava-internal";
         #   "tooltip" = false;
         # };
+        "backlight" = {
+	  "format" = "{icon} {percent}%";
+	  "format-icons" = [ "" "" "" "" "" "" "" "" "" ];
+	};
         "pulseaudio" = {
           "scroll-step" = 1;
           "format" = "{icon} {volume}%";
@@ -229,6 +235,21 @@
           "interval" = 1;
           "tooltip" = false;
         };
+	"battery" = {
+	  "states" = {
+	    "good" = 95;
+	    "warning" = 30;
+	    "critical" = 15;
+	  };
+	  "format" = "{icon} {capacity}%";
+	  "format-full" = "{icon} {capacity}%";
+	  "format-charging" = " {capacity}%";
+	  "format-plugged" = " {capacity}%";
+	  "format-icons" = [ "" "" "" "" "" ];
+	};
+	"battery#bat2" = {
+	  "bat" = "BAT2";
+	};
         # "custom/powermenu" = {
         #   "format" = "";
         #   "on-click" = "pkill rofi || ~/.config/rofi/powermenu/type-3/powermenu.sh";
