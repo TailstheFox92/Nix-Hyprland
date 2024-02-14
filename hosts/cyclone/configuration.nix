@@ -117,6 +117,7 @@
      f3d
      cava
      pamixer
+     parted
   ];
 
   # Steam specific config
