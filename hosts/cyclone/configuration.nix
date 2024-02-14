@@ -118,6 +118,7 @@
      cava
      pamixer
      parted
+     btop
   ];
 
   # Steam specific config

@@ -118,6 +118,7 @@
      cava
      pamixer
      lshw
+     btop
   ];
 
   fonts.packages = with pkgs; [

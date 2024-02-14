@@ -117,6 +117,7 @@
      f3d
      cava
      pamixer
+     btop
   ];
 
   fonts.packages = with pkgs; [

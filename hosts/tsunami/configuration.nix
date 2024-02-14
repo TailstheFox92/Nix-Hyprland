@@ -118,6 +118,7 @@
      cava
      pamixer
      lshw
+     btop
   ];
 
   fonts.packages = with pkgs; [
@@ -182,7 +183,7 @@
     # If your cursor becomes invisible
     WLR_NO_HARDWARE_CURSORS = "1";
     # Hint eletron apps to use wayland
-    NIXOS_OZONE_WL = "1";
+    # NIXOS_OZONE_WL = "1";
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
@@ -228,8 +229,6 @@
 	  enable = true;
 	  enableOffloadCmd = true;
       };
-
-
         intelBusId = "PCI:0:2:0";
 	nvidiaBusId = "PCI:1:0:0";
       };
