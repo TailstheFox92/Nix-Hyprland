@@ -253,4 +253,7 @@
     pulse.enable = true;
     jack.enable = true;
   };
+ 
+ # swaylock fix
+  security.pam.services.swaylock = {};
 }

@@ -225,4 +225,7 @@
   # Install necessary virtualisation packages
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
+
+  # swaylock fix
+  security.pam.services.swaylock = {};
 }

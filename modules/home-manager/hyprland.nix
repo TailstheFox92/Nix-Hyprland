@@ -85,7 +85,7 @@ in
       "$mod, T, exec, thunar" # File Manager
       "$mod SHIFT, F, togglefloating,"
       "$mod, D, exec, rofi -show drun -show-icons" # App Launcher
-      "SUPER, L, exec, swaylock -f -c 000000" # Lock Screen
+      "$mod SHIFT, L, exec, swaylock -f -i ${./wallpapers/CyberpunkRuins.jpg}" # Lock Screen
       #"$mod SHIFT, S, exec, grim -g $(slurp) - | swappy -f -" #screenshot
 
       # keyboard backlight

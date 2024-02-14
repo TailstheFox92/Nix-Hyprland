@@ -215,4 +215,7 @@
 
   # Touchpad support on Lenovo Yoga
   boot.blacklistedKernelModules = ["elan_i2c"];
+
+  # swaylock fix
+  security.pam.services.swaylock = {};
 }
