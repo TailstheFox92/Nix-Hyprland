@@ -65,7 +65,6 @@
     libreoffice-fresh
     mate.atril
     logseq
-    grapejuice
     signal-desktop
     thunderbird
     qbittorrent
@@ -77,7 +76,6 @@
     heroic 
     cockatrice
     openmw
-    grapejuice
   ];
 
   # Virtualization

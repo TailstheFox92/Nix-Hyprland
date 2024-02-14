@@ -228,4 +228,7 @@
 
   # swaylock fix
   security.pam.services.swaylock = {};
+
+  # required for vinegar
+  services.flatpak.enable = true;
 }
