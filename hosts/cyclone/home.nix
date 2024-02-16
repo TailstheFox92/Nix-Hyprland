@@ -70,6 +70,7 @@
     qbittorrent
     vesktop
     remmina
+    xfce.mousepad
 
     # Game Launchers
     lutris

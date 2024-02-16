@@ -117,6 +117,7 @@
      f3d
      cava
      pamixer
+     lshw
      btop
      brightnessctl
      playerctl

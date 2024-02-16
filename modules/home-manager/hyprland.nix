@@ -8,7 +8,6 @@ let
 
     ${pkgs.swww}/bin/swww img ${./wallpapers/CyberpunkRuins.jpg} &
   '';
-
 in
 {
   wayland.windowManager.hyprland.enable = true;
@@ -83,9 +82,11 @@ in
       "$mod, Q, killactive,"
       "$mod SHIFT, P, exit,"
       "$mod, T, exec, thunar" # File Manager
-      "$mod SHIFT, F, togglefloating,"
+      "$mod, F, togglefloating,"
+      "$mod SHIFT, F, fullscreen"
       "$mod, D, exec, rofi -show drun -show-icons" # App Launcher
       "$mod SHIFT, L, exec, swaylock -f -i ${./wallpapers/CyberpunkRuins.jpg}" # Lock Screen
+      "$mod, V, exec, quickemu --vm windows-10.conf --display spice"
       #"$mod SHIFT, S, exec, grim -g $(slurp) - | swappy -f -" #screenshot
 
       # keyboard backlight
