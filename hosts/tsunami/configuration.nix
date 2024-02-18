@@ -11,6 +11,7 @@
       ./../../modules/nix/printing.nix
       ./../../modules/nix/sddm.nix
       ./../../modules/nix/thunar.nix
+      ./../../modules/nix/udev.nix
       inputs.home-manager.nixosModules.default
     ];
 
