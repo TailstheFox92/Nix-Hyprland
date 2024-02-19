@@ -76,7 +76,7 @@
     lutris
     heroic 
     cockatrice
-    openmw
+    r2modman
   ];
 
   dconf.settings = {

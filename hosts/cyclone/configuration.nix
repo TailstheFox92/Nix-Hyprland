@@ -126,6 +126,7 @@
     swaylock
     wine
     wine64
+    openmw
 
     # Cyclone only
     quickemu
