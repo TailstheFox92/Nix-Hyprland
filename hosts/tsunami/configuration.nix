@@ -86,6 +86,7 @@
      swww
      alacritty
      rofi-wayland
+     rofi-power-menu
      brave
      (discord.override {
       withOpenASAR = true;

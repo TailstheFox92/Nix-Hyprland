@@ -80,7 +80,8 @@ in
       ", Print, exec, grimblast copy area"
       "$mod, return, exec, alacritty" # Launch Terminal
       "$mod, Q, killactive,"
-      "$mod SHIFT, P, exit,"
+      "$mod SHIFT, M, exit,"
+      "$mod SHIFT, P, exec, rofi -show p -modi p:'rofi-power-menu'"
       "$mod, T, exec, thunar" # File Manager
       "$mod, F, togglefloating,"
       "$mod SHIFT, F, fullscreen"
