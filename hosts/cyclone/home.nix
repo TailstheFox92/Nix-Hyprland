@@ -72,6 +72,7 @@
     vesktop
     remmina
     xfce.mousepad
+    youtube-music
 
     # Game Launchers
     lutris
