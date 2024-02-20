@@ -31,7 +31,7 @@ in
       gaps_out = 20;
       border_size = 2;
 
-      "col.active_border" = "rgba(${base0E}ff) rgba(${base09}ff) 60deg";
+      "col.active_border" = "rgba(${base06}ff) rgba(${base0C}ff) 60deg";
       "col.inactive_border" = "rgba(${base00}ff)";
 
       layout = "master";

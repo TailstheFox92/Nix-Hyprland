@@ -109,7 +109,7 @@
     EDITOR = "nvim";
   };
 
-  colorScheme = inputs.nix-colors.colorschemes.tokyo-night-dark;
+  colorScheme = inputs.nix-colors.colorschemes.tokyo-night-terminal-dark;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
