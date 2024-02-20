@@ -63,6 +63,10 @@
     packages = with pkgs; [];
   };
 
+  # Define a default shell
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+
   home-manager = {
     # also pass inputs to home-manager modules
     extraSpecialArgs = { inherit inputs; };
@@ -77,52 +81,53 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     wget
-     git
-     mako
-     libnotify
-     swww
-     alacritty
-     rofi-wayland
-     rofi-power-menu
-     brave
-     (discord.override {
+    neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    wget
+    git
+    mako
+    libnotify
+    swww
+    alacritty
+    rofi-wayland
+    rofi-power-menu
+    brave
+    (discord.override {
       withOpenASAR = true;
       withVencord = true;
-     })
-     networkmanagerapplet
-     grim
-     slurp
-     wl-clipboard
-     pavucontrol
-     neofetch
-     swappy
-     font-manager
-     ripgrep
-     curl
-     grimblast
-     dropbox-cli
-     catppuccin-sddm-corners
-     libsForQt5.qt5.qtgraphicaleffects
-     unzip
-     gnome.file-roller
-     webp-pixbuf-loader
-     poppler
-     ffmpegthumbnailer
-     haskellPackages.freetype2
-     libgsf
-     nufraw-thumbnailer
-     gnome-epub-thumbnailer
-     mcomix
-     f3d
-     cava
-     pamixer
-     lshw
-     btop
-     brightnessctl
-     playerctl
-     swaylock
+    })
+    networkmanagerapplet
+    grim
+    slurp
+    wl-clipboard
+    pavucontrol
+    neofetch
+    swappy
+    font-manager
+    ripgrep
+    curl
+    grimblast
+    dropbox-cli
+    catppuccin-sddm-corners
+    libsForQt5.qt5.qtgraphicaleffects
+    unzip
+    gnome.file-roller
+    webp-pixbuf-loader
+    poppler
+    ffmpegthumbnailer
+    haskellPackages.freetype2
+    libgsf
+    nufraw-thumbnailer
+    gnome-epub-thumbnailer
+    mcomix
+    f3d
+    cava
+    pamixer
+    lshw
+    btop
+    brightnessctl
+    playerctl
+    swaylock
+    zsh
   ];
 
   fonts.packages = with pkgs; [

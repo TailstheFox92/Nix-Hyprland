@@ -64,6 +64,10 @@
     packages = with pkgs; [];
   };
 
+  # Define a default shell
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+
   home-manager = {
     # also pass inputs to home-manager modules
     extraSpecialArgs = { inherit inputs; };
@@ -124,6 +128,7 @@
      brightnessctl
      playerctl
      swaylock
+     zsh
   ];
 
   fonts.packages = with pkgs; [
