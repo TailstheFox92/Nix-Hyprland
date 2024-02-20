@@ -12,6 +12,7 @@
       ./../../modules/nix/sddm.nix
       ./../../modules/nix/thunar.nix
       ./../../modules/nix/udev.nix
+      ./../../modules/nix/nm-applet.nix
       inputs.home-manager.nixosModules.default
     ];
 
