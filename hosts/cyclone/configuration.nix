@@ -13,6 +13,7 @@
       ./../../modules/nix/thunar.nix
       ./../../modules/nix/udev.nix
       ./../../modules/nix/nm-applet.nix
+      ./../../modules/nix/alvr.nix
       inputs.home-manager.nixosModules.default
     ];
 

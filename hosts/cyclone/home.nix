@@ -79,6 +79,7 @@
     heroic 
     cockatrice
     r2modman
+    sidequest
   ];
 
   dconf.settings = {
