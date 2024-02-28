@@ -134,6 +134,7 @@
     wine64
     openmw
     zsh
+    aria
 
     # Cyclone only
     quickemu

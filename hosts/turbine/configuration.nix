@@ -129,6 +129,7 @@
     playerctl
     swaylock
     zsh
+    aria
   ];
 
   fonts.packages = with pkgs; [
