@@ -73,6 +73,7 @@
     remmina
     xfce.mousepad
     youtube-music
+    element-desktop
 
     # Game Launchers
     lutris

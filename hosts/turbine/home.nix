@@ -73,6 +73,7 @@
     lutris
     remmina
     xfce.mousepad
+    element-desktop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

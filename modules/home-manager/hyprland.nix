@@ -88,6 +88,7 @@ in
       "$mod, D, exec, rofi -show drun -show-icons" # App Launcher
       "$mod SHIFT, L, exec, swaylock -f -i ${./wallpapers/CyberpunkRuins.jpg}" # Lock Screen
       "$mod, V, exec, quickemu --vm windows-10.conf --display spice"
+      # ''$mod, C, exec, hyprpicker -f hex''
       #"$mod SHIFT, S, exec, grim -g $(slurp) - | swappy -f -" #screenshot
 
       # keyboard backlight
