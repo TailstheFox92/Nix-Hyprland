@@ -135,6 +135,7 @@
     openmw
     zsh
     aria
+    zulu11
 
     # Cyclone only
     quickemu

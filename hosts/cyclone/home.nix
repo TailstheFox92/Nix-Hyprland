@@ -74,6 +74,8 @@
     xfce.mousepad
     youtube-music
     element-desktop
+    floorp
+    fusee-interfacee-tk
 
     # Game Launchers
     lutris

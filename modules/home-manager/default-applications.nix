@@ -8,6 +8,6 @@
     "video/png" = [ "mpv.desktop" ];
     "video/jpg" = [ "mpv.desktop"];
     "video/*" = [ "mpv.desktop" ];
-    "text/html" = [ "brave-browser.desktop" ];
+    "text/html" = [ "floorp.desktop" ];
   };
 }
