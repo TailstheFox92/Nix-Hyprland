@@ -28,11 +28,6 @@
       fsType = "ext4";
     };
 
-  fileSystems."/home/gfernandez/Media/Win-Virt" =
-  { device = "/dev/disk/by-label/winvirt";
-    fsType = "ext4";
-  };
-
   fileSystems."/home/gfernandez/Media/Games2" =
   { device = "/dev/disk/by-label/games2";
     fsType = "ext4";
