@@ -74,6 +74,7 @@
     xfce.mousepad
     element-desktop
     floorp
+    rofi-power-menu
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

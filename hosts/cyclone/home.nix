@@ -41,7 +41,7 @@
       name = "HDMI-A-2";
       width = 1920;
       height = 1080;
-      refreshRate = 120;
+      refreshRate = 240;
       x = 0;
       y = 0;
       scale = 1;
@@ -76,6 +76,7 @@
     element-desktop
     floorp
     fusee-interfacee-tk
+    rofi-power-menu
 
     # Game Launchers
     lutris

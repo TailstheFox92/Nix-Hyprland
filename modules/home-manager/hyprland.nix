@@ -81,8 +81,8 @@ in
       ''$mod, return, exec, ${pkgs.alacritty}/bin/alacritty'' # Launch Terminal
       "$mod, Q, killactive,"
       "$mod SHIFT, M, exit,"
-      ''$mod SHIFT, P, exec, ${pkgs.rofi-wayland}/bin/rofi -show p -modi p:'rofi-power-menu'''
-      ''$mod, T, exec, ${pkgs.thunar}/bin/thunar'' # File Manager
+      "$mod SHIFT, P, exec, rofi -show p -modi p:'rofi-power-menu'"
+      ''$mod, T, exec, ${pkgs.xfce.thunar}/bin/thunar'' # File Manager
       "$mod, F, togglefloating,"
       "$mod SHIFT, F, fullscreen"
       ''$mod, D, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun -show-icons'' # App Launcher
