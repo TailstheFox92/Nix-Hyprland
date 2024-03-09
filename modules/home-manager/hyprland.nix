@@ -77,37 +77,36 @@ in
     "$mod" = "SUPER";
     bind = [
       #"$mod, F, exec, firefox"
-      ", Print, exec, grimblast copy area"
-      "$mod, return, exec, alacritty" # Launch Terminal
+      '', Print, exec, ${pkgs.grimblast}/bin/grimblast copy area''
+      ''$mod, return, exec, ${pkgs.alacritty}/bin/alacritty'' # Launch Terminal
       "$mod, Q, killactive,"
       "$mod SHIFT, M, exit,"
-      "$mod SHIFT, P, exec, rofi -show p -modi p:'rofi-power-menu'"
-      "$mod, T, exec, thunar" # File Manager
+      ''$mod SHIFT, P, exec, ${pkgs.rofi-wayland}/bin/rofi -show p -modi p:'rofi-power-menu'''
+      ''$mod, T, exec, ${pkgs.thunar}/bin/thunar'' # File Manager
       "$mod, F, togglefloating,"
       "$mod SHIFT, F, fullscreen"
-      "$mod, D, exec, rofi -show drun -show-icons" # App Launcher
-      "$mod SHIFT, L, exec, swaylock -f -i ${./wallpapers/CyberpunkRuins.jpg}" # Lock Screen
-      "$mod, V, exec, quickemu --vm windows-10.conf --display spice"
+      ''$mod, D, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun -show-icons'' # App Launcher
+      ''$mod SHIFT, L, exec, ${pkgs.swaylock}/bin/swaylock -f -i ${./wallpapers/CyberpunkRuins.jpg}'' # Lock Screen
       # ''$mod, C, exec, hyprpicker -f hex''
       #"$mod SHIFT, S, exec, grim -g $(slurp) - | swappy -f -" #screenshot
 
       # keyboard backlight
-      ", xf86KbdBrightnessUp, exec, brightnessctl -d *::kbd_backlight set +33%"
-      ", xf86KbdBrightnessDown, exec, brightnessctl -d *::kbd_backlight set 33%-"
+      '', xf86KbdBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d *::kbd_backlight set +33%''
+      '', xf86KbdBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d *::kbd_backlight set 33%-''
 
       # screen brightness
-      ", XF86MonBrightnessUp, exec, brightnessctl s +5% -d intel_backlight"
-      ", XF86MonBrightnessDown, exec, brightnessctl s 5%- -d intel_backlight"
+      ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl s +5% -d intel_backlight"
+      ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl s 5%- -d intel_backlight"
 
       # keyboard media keys
-      ", XF86AudioRaiseVolume, exec, pamixer -i 5 "
-      ", XF86AudioLowerVolume, exec, pamixer -d 5"
-      ", XF86AudioMicMute, exec, pamixer --default-source -m"
-      ", XF86AudioMute, exec, pamixer -t"
-      ", XF86AudioPlay, exec, playerctl play-pause"
-      ", XF86AudioPause, exec, playerctl play-pause"
-      ", XF86AudioNext, exec, playerctl next"
-      ", XF86AudioPrev, exec, playerctl previous"
+      '', XF86AudioRaiseVolume, exec, ${pkgs.pamixer}/bin/pamixer -i 5 ''
+      '', XF86AudioLowerVolume, exec, ${pkgs.pamixer}/bin/pamixer -d 5''
+      '', XF86AudioMicMute, exec, ${pkgs.pamixer}/bin/pamixer --default-source -m''
+      '', XF86AudioMute, exec, ${pkgs.pamixer}/bin/pamixer -t''
+      '', XF86AudioPlay, exec, ${pkgs.playerctl}/bin/playerctl play-pause''
+      '', XF86AudioPause, exec, ${pkgs.playerctl}/bin/playerctl play-pause''
+      '', XF86AudioNext, exec, ${pkgs.playerctl}/bin/playerctl next''
+      '', XF86AudioPrev, exec, ${pkgs.playerctl}/bin/playerctl previous''
 
       # Move focus with Mod + arrow keys
       "$mod, left, movefocus, l"

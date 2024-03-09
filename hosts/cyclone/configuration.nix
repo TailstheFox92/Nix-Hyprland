@@ -84,31 +84,20 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
-    mako
     libnotify
-    swww
-    alacritty
-    rofi-wayland
-    rofi-power-menu
     brave
     (discord.override {
       withOpenASAR = true;
       withVencord = true;
     })
     networkmanagerapplet
-    grim
-    slurp
     wl-clipboard
     pavucontrol
     neofetch
-    swappy
-    font-manager
     ripgrep
     curl
-    grimblast
     dropbox-cli
     catppuccin-sddm-corners
     libsForQt5.qt5.qtgraphicaleffects
@@ -124,16 +113,11 @@
     mcomix
     f3d
     cava
-    pamixer
     parted
     btop
-    brightnessctl
-    playerctl
-    swaylock
     wine
     wine64
     openmw
-    zsh
     aria
     zulu11
 

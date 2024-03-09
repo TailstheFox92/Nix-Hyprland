@@ -156,9 +156,9 @@
           "cpu"
           "network"
           "temperature"
-	  "battery"
-	  "battery#bat2"
-          # "custom/powermenu"
+	        "battery"
+	        "battery#bat2"
+          "custom/powermenu"
         ];
 	"hyprland/workspaces" = {
 	  format = "{icon}";
@@ -250,11 +250,11 @@
 	"battery#bat2" = {
 	  "bat" = "BAT2";
 	};
-        # "custom/powermenu" = {
-        #   "format" = "";
-        #   "on-click" = "pkill rofi || ~/.config/rofi/powermenu/type-3/powermenu.sh";
-        #   "tooltip" = false;
-        # };
+        "custom/powermenu" = {
+          "format" = "";
+          "on-click" = "pkill rofi || rofi -show p -modi p:'rofi-power-menu'";
+          "tooltip" = false;
+        };
         "tray" = {
           "icon-size" = 15;
           "spacing" = 5;

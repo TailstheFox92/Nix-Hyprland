@@ -41,7 +41,7 @@
       name = "HDMI-A-2";
       width = 1920;
       height = 1080;
-      refreshRate = 240;
+      refreshRate = 120;
       x = 0;
       y = 0;
       scale = 1;
