@@ -77,6 +77,7 @@
     floorp
     fusee-interfacee-tk
     rofi-power-menu
+    swww
 
     # Game Launchers
     lutris
