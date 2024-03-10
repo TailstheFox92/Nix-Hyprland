@@ -61,7 +61,7 @@
     mpv
     gnome.simple-scan
     newsflash
-    gimp-with-plugins   
+    gimp   
     krita
     libreoffice-fresh
     mate.atril
