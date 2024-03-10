@@ -21,7 +21,7 @@
     ./../../modules/home-manager/hyprland.nix
     ./../../modules/home-manager/mako.nix
     ./../../modules/home-manager/alacritty.nix
-    ./../../modules/home-manager/nixvim.nix
+    ./../../modules/home-manager/neovim.nix
     ./../../modules/home-manager/git.nix
     ./../../modules/home-manager/gtk.nix
     ./../../modules/home-manager/default-applications.nix
