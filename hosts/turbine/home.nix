@@ -77,6 +77,7 @@
     floorp
     rofi-power-menu
     swww
+    tmux
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

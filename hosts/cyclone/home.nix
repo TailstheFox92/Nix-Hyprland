@@ -78,6 +78,7 @@
     fusee-interfacee-tk
     rofi-power-menu
     swww
+    tmux
 
     # Game Launchers
     lutris
