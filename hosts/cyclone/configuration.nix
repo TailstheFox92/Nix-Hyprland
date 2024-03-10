@@ -120,6 +120,7 @@
     openmw
     aria
     zulu11
+    dotnetCorePackages.sdk_6_0
 
     # Cyclone only
     quickemu
