@@ -121,6 +121,8 @@
     aria
     zulu11
     dotnetCorePackages.sdk_6_0
+    # omnisharp-roslyn
+    mono
 
     # Cyclone only
     quickemu

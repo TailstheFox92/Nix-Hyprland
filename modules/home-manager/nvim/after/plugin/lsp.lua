@@ -18,7 +18,7 @@ end)
 -- here you can setup the language servers
 require('lspconfig').nil_ls.setup({})
 require('lspconfig').tsserver.setup({})
-require('lspconfig').eslint_d.setup({})
+require('lspconfig').eslint.setup({})
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').omnisharp.setup({})

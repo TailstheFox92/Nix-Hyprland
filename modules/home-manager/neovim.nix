@@ -8,7 +8,7 @@
     plugins = with pkgs.vimPlugins; [
       # Functionality
       telescope-nvim
-      (nvim-treesitter.withPlugins (p: [ p.javascript p.typescript p.c p.lua p.vim p.vimdoc p.query ]))
+      (nvim-treesitter.withPlugins (p: [ p.javascript p.typescript p.c p.lua p.vim p.vimdoc p.query p.c_sharp]))
       harpoon
       undotree
       vim-fugitive 
@@ -37,7 +37,7 @@
       nil
       alejandra
       typescript
-      eslint_d
+      nodePackages_latest.eslint
       lua-language-server 
       rust-analyzer
       omnisharp-roslyn
