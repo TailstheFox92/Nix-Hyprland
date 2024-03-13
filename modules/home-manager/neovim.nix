@@ -8,10 +8,11 @@
     plugins = with pkgs.vimPlugins; [
       # Functionality
       telescope-nvim
-      (nvim-treesitter.withPlugins (p: [ p.javascript p.typescript p.c p.lua p.vim p.vimdoc p.query p.c_sharp]))
+      (nvim-treesitter.withPlugins (p: [ p.javascript p.typescript p.c p.lua p.vim p.vimdoc p.query p.c_sharp p.nix p.org ]))
       harpoon
       undotree
       vim-fugitive 
+      orgmode
 
       lsp-zero-nvim
       # LSP Support

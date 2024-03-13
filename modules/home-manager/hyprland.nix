@@ -113,6 +113,11 @@ in
       "$mod, right, movefocus, r"
       "$mod, up, movefocus, u"
       "$mod, down, movefocus, d"
+      # Vim-Like Movement mode
+      "$mod, h, movefocus, l"
+      "$mod, l, movefocus, r"
+      "$mod, k, movefocus, u"
+      "$mod, j, movefocus, d"
 
       # Switch workspaces with mod + [0-9]
       # "$mod, 1, workspace, 1"

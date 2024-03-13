@@ -36,7 +36,7 @@
       "g/" = "/";
 
       ee = "editor-open";
-      V = ''''$${pkgs.bat}/bin/bat --paging=always --theme=tokyo-night-dark "$f"'';
+      V = ''''$${pkgs.bat}/bin/bat --paging=always --theme=tokyo-night "$f"'';
     };
 
     settings = {
