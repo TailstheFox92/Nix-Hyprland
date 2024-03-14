@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }:
+{ pkgs, config, ... }:
 
 let
   startupScript = pkgs.pkgs.writeShellScriptBin "start" ''

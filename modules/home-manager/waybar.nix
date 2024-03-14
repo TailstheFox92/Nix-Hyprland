@@ -171,7 +171,7 @@
 	};
         "custom/launcher" = {
           "format" = " ";
-          # "on-click" = "pkill rofi || rofi2";
+          "on-click" = "pkill rofi || rofi -show drun -show-icons";
           # "on-click-middle" = "exec default_wall";
           # "on-click-right" = "exec wallpaper_random";
           "tooltip" = false;
@@ -251,7 +251,7 @@
 	  "bat" = "BAT2";
 	};
         "custom/powermenu" = {
-          "format" = "";
+          "format" = "  ";
           "on-click" = "pkill rofi || rofi -show p -modi p:'rofi-power-menu'";
           "tooltip" = false;
         };

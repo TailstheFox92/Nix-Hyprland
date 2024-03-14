@@ -80,6 +80,7 @@
     swww
     tmux
     protontricks
+    emacs
 
     # Game Launchers
     lutris
