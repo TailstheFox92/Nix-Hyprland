@@ -87,8 +87,6 @@
     aria
     jdk17_headless
     jdk8_headless
-    zulu17
-    zulu8
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
