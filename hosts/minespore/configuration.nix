@@ -87,6 +87,7 @@
     aria
     jdk17_headless
     jdk8_headless
+    spice-vdagent
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
