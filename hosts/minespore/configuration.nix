@@ -86,7 +86,6 @@
     parted
     aria
     zulu17
-    zulu8
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
