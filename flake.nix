@@ -22,6 +22,8 @@
 
     # sddm-catppuccin.url = "github:khaneliman/sddm-catppuccin";
     # sddm-catppuccin.inputs.nixpkgs.follows = "nixpkgs";
+
+    mms.url = "github:mkaito/nixos-modded-minecraft-servers";
   };
   outputs = { self, nixpkgs, nixvim, ... }@inputs:
     let

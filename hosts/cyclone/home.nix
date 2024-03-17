@@ -88,6 +88,7 @@
     cockatrice
     r2modman
     sidequest
+    prismlauncher
   ];
 
   dconf.settings = {

@@ -14,6 +14,9 @@
       ./../../modules/nix/udev.nix
       ./../../modules/nix/nm-applet.nix
       ./../../modules/nix/alvr.nix
+      ./../../modules/nix/docker.nix
+      ./../../modules/nix/samba.nix
+      ./../../modules/nix/ssh.nix
       inputs.home-manager.nixosModules.default
     ];
 
@@ -62,7 +65,7 @@
   users.users.gfernandez = {
     isNormalUser = true;
     description = "Gabriel Fernandez";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "docker" "podman" ];
     packages = with pkgs; [];
   };
 
@@ -120,6 +123,8 @@
     openmw
     aria
     zulu11
+    zulu8
+    zulu17
     dotnetCorePackages.sdk_6_0
     # omnisharp-roslyn
     mono
@@ -155,11 +160,11 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 17500 ]; 
-  networking.firewall.allowedUDPPorts = [ 17500 ];
+  networking.firewall.allowedTCPPorts = [ 17500 25565 ]; 
+  networking.firewall.allowedUDPPorts = [ 17500 25565 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
