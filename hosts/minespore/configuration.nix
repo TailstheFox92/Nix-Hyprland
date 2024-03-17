@@ -85,7 +85,8 @@
     unzip
     parted
     aria
-    zulu17
+    jdk17_headless
+    jdk8_headless
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
