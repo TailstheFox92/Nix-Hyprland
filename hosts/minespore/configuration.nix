@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
       ./../../modules/nix/samba.nix
       ./../../modules/nix/ssh.nix
-      # ./../../modules/nix/minecraft.nix
+      ./../../modules/nix/minecraft.nix
       inputs.home-manager.nixosModules.default
     ];
 
