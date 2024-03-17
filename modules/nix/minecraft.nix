@@ -10,14 +10,14 @@ in {
     services.modded-minecraft-servers = {
         # This is mandatory, sorry.
         eula = true;
-        jvmMaxAllocation = "8G";
-        jvmInitialAllocation = "2G";
-        jvmPackage = jre17;
         spore = {
             enable = true;
             rsyncSSHKeys = [
                 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcizxGnOXrqoqtngKDL8Agur0mJH9BgD80asT9UerZm"
             ];
+            jvmMaxAllocation = "8G";
+            jvmInitialAllocation = "2G";
+            jvmPackage = jre17;
             serverConfig = {
                 server-port = 25565;
                 rcon-port = 25566;
