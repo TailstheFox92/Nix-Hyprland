@@ -57,6 +57,12 @@
             ./hosts/cyclone/configuration.nix
           ];
         };
+        minespore = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/minespore/configuration.nix
+          ];
+        };
       };
     };
 }
