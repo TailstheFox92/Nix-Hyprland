@@ -87,6 +87,7 @@
     jdk17_headless
     jdk8_headless
     spice-vdagent
+    screen
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
