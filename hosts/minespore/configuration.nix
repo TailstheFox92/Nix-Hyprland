@@ -88,6 +88,7 @@
     jdk8_headless
     spice-vdagent
     screen
+    mcrcon
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

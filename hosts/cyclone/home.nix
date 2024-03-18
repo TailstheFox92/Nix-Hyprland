@@ -81,6 +81,7 @@
     tmux
     protontricks
     emacs
+    mcrcon
 
     # Game Launchers
     lutris
