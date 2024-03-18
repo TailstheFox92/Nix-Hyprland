@@ -27,8 +27,8 @@ in {
                     spawn-protection = 0;
                     max-tick-time = 5 * 60 * 1000;
                     allow-flight = true;
-                    difficulty = "normal";
-                    rcon-password = "TheThrongler";
+                    difficulty = 2;
+                    rcon-password = "6337";
                 };
             };
         };
