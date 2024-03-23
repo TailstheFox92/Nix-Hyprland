@@ -76,6 +76,7 @@
     quickemu
     element-desktop
     floorp
+    firefox
     rofi-power-menu
     swww
     tmux
