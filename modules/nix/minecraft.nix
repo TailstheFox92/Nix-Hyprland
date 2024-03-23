@@ -13,6 +13,9 @@ in {
         instances = {
             spore = {
                 enable = false;
+                rsyncSSHKeys = [
+                    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcizxGnOXrqoqtngKDL8Agur0mJH9BgD80asT9UerZm"
+                ];
                 jvmMaxAllocation = "8G";
                 jvmInitialAllocation = "2G";
                 jvmPackage = jre17;
@@ -30,6 +33,9 @@ in {
             };
             valhesia = {
                 enable = true;
+                rsyncSSHKeys = [
+                    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcizxGnOXrqoqtngKDL8Agur0mJH9BgD80asT9UerZm"
+                ];
                 jvmMaxAllocation = "8G";
                 jvmInitialAllocation = "2G";
                 jvmPackage = jre8;
