@@ -84,7 +84,7 @@
     unzip
     parted
     aria
-    jdk17_headless
+    # jdk17_headless
     jdk8_headless
     spice-vdagent
     screen

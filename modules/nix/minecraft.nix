@@ -2,7 +2,7 @@
 
 # Pin JRE Versions used by instances
 jre8 = pkgs.temurin-bin-8;
-jre17 = pkgs.temurin-bin-17;
+# jre17 = pkgs.temurin-bin-17;
 
 in {
     imports = [ inputs.mms.module ];
@@ -11,26 +11,26 @@ in {
         # This is mandatory, sorry.
         eula = true;
         instances = {
-            spore = {
-                enable = false;
-                rsyncSSHKeys = [
-                    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcizxGnOXrqoqtngKDL8Agur0mJH9BgD80asT9UerZm"
-                ];
-                jvmMaxAllocation = "8G";
-                jvmInitialAllocation = "2G";
-                jvmPackage = jre17;
-                serverConfig = {
-                    server-port = 25565;
-                    rcon-port = 25575;
-                    motd = "If I need your body, I'll fuck it";
-                    white-list = true;
-                    spawn-protection = 0;
-                    max-tick-time = 5 * 60 * 1000;
-                    allow-flight = true;
-                    difficulty = 2;
-                    rcon-password = "6337";
-                };
-            };
+            # spore = {
+            #     enable = false;
+            #     rsyncSSHKeys = [
+            #         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcizxGnOXrqoqtngKDL8Agur0mJH9BgD80asT9UerZm"
+            #     ];
+            #     jvmMaxAllocation = "8G";
+            #     jvmInitialAllocation = "2G";
+            #     jvmPackage = jre17;
+            #     serverConfig = {
+            #         server-port = 25565;
+            #         rcon-port = 25575;
+            #         motd = "If I need your body, I'll fuck it";
+            #         white-list = true;
+            #         spawn-protection = 0;
+            #         max-tick-time = 5 * 60 * 1000;
+            #         allow-flight = true;
+            #         difficulty = 2;
+            #         rcon-password = "6337";
+            #     };
+            # };
             valhesia = {
                 enable = true;
                 rsyncSSHKeys = [
