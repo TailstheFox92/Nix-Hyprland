@@ -74,7 +74,6 @@
     xfce.mousepad
     youtube-music
     element-desktop
-    floorp
     firefox
     fusee-interfacee-tk
     rofi-power-menu

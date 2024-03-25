@@ -74,8 +74,7 @@
     xfce.mousepad
     lutris
     quickemu
-    element-desktop
-    floorp
+    element-desktop 
     firefox
     rofi-power-menu
     swww
