@@ -65,7 +65,6 @@
     krita
     libreoffice-fresh
     mate.atril
-    logseq
     signal-desktop
     thunderbird
     qbittorrent
